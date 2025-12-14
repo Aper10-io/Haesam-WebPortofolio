@@ -587,6 +587,54 @@ h3 {
     margin-left: 35px;
   }
 }
+/* ===============================
+   TIMELINE RESPONSIVE (MOBILE)
+================================ */
+@media (max-width: 768px) {
+  .timeline-section {
+    padding: 60px 20px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .timeline-line {
+    left: 12px; /* garis pindah ke kiri */
+  }
+
+  .timeline-item {
+    margin-left: 40px;
+    padding-right: 10px;
+  }
+
+  .timeline-item .dot {
+    left: -28px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-item .year {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .timeline-item .content-box {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .timeline-item .content-box h3 {
+    font-size: 18px;
+  }
+
+  .timeline-item .content-box p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
 /* ===== NAVBAR UPGRADED ===== */
 .navbar {
   position: fixed;
