@@ -1239,6 +1239,9 @@ h3 {
   color: #bf00ff;
   margin-bottom: 40px;
 }
+.certificate-slider {
+  overflow: hidden;
+}
 
 /* ================= SLIDER ================= */
 .certificate-slider {
@@ -1252,6 +1255,7 @@ h3 {
   gap: 30px;
   width: max-content;
   animation: certScroll 40s linear infinite;
+  align-items: center;
 }
 
 /* CARD */
