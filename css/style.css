@@ -843,7 +843,8 @@ h3 {
 
 /* Neon glow smooth saat hover */
 .card-3d:hover {
-  box-shadow: 0 10px 25px rgba(75, 0, 130, 0.4),
+  box-shadow:
+    0 10px 25px rgba(75, 0, 130, 0.4),
     0 0 40px rgba(191, 0, 255, 0.25);
 }
 
@@ -937,7 +938,10 @@ h3 {
   font-weight: 600;
   opacity: 0;
   pointer-events: none;
-  transition: 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+  transition:
+    0.3s ease,
+    box-shadow 0.3s ease,
+    text-shadow 0.3s ease;
   white-space: nowrap;
   box-shadow: 0 0 15px rgba(191, 0, 255, 0.5);
   text-align: center;
@@ -947,21 +951,35 @@ h3 {
 .skill-bar:hover .tooltip {
   opacity: 1;
   top: -40px;
-  box-shadow: 0 0 15px #bf00ff, 0 0 25px #bf00ff, 0 0 35px #bf00ff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #bf00ff;
+  box-shadow:
+    0 0 15px #bf00ff,
+    0 0 25px #bf00ff,
+    0 0 35px #bf00ff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #bf00ff;
   animation: neonPulse 1.5s ease-in-out infinite alternate;
 }
 
 /* Neon pulse animation */
 @keyframes neonPulse {
   0% {
-    box-shadow: 0 0 10px #bf00ff, 0 0 20px #bf00ff, 0 0 30px #bf00ff;
+    box-shadow:
+      0 0 10px #bf00ff,
+      0 0 20px #bf00ff,
+      0 0 30px #bf00ff;
   }
   50% {
-    box-shadow: 0 0 20px #bf00ff, 0 0 30px #bf00ff, 0 0 40px #bf00ff;
+    box-shadow:
+      0 0 20px #bf00ff,
+      0 0 30px #bf00ff,
+      0 0 40px #bf00ff;
   }
   100% {
-    box-shadow: 0 0 15px #bf00ff, 0 0 25px #bf00ff, 0 0 35px #bf00ff;
+    box-shadow:
+      0 0 15px #bf00ff,
+      0 0 25px #bf00ff,
+      0 0 35px #bf00ff;
   }
 }
 
@@ -1019,7 +1037,10 @@ h3 {
 }
 
 .footer-right a:hover {
-  text-shadow: 0 0 15px #bf00ff, 0 0 25px #bf00ff, 0 0 35px #bf00ff;
+  text-shadow:
+    0 0 15px #bf00ff,
+    0 0 25px #bf00ff,
+    0 0 35px #bf00ff;
 }
 
 .footer-copy {
@@ -1042,7 +1063,10 @@ h3 {
   }
 }
 .footer-right .social-icon:hover {
-  box-shadow: 0 0 15px #bf00ff, 0 0 25px #bf00ff, 0 0 35px #bf00ff;
+  box-shadow:
+    0 0 15px #bf00ff,
+    0 0 25px #bf00ff,
+    0 0 35px #bf00ff;
   transform: translateY(-3px) scale(1.1);
 }
 /* ===== GRADIENT TEXT ANIMATION ===== */
@@ -1075,7 +1099,9 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid #bf00ff; /* warna kursor */
-  animation: typing 4s steps(40, end), blinkCursor 0.7s infinite;
+  animation:
+    typing 4s steps(40, end),
+    blinkCursor 0.7s infinite;
 }
 
 @keyframes typing {
@@ -1104,13 +1130,6 @@ h3 {
   overflow: hidden;
   position: relative;
   padding: 40px 0;
-}
-
-/* Track yang berjalan */
-.slide-track {
-  display: flex;
-  width: calc(500px * 8); /* jumlah slide × lebar */
-  animation: scroll 25s linear infinite;
 }
 
 /* Card setiap gambar */
@@ -1157,7 +1176,7 @@ h3 {
 .slide-track {
   display: flex;
   gap: 30px;
-  animation: infiniteScroll 35s linear infinite;
+  animation: infiniteScroll 40s linear infinite;
   width: max-content;
 }
 
@@ -1194,11 +1213,11 @@ h3 {
 
 /* ANIMASI INFINITE LOOP SUPER SMOOTH */
 @keyframes infiniteScroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(-100%);
   }
 }
 /* Warna untuk judul h3 */
@@ -1230,6 +1249,7 @@ h3 {
 
 .slide-track {
   display: flex;
+  gap: 30px;
   width: max-content;
   animation: certScroll 40s linear infinite;
 }
@@ -1433,7 +1453,9 @@ h3 {
 .bio-options select:focus {
   outline: none;
   border-color: #bf00ff;
-  box-shadow: 0 0 14px #bf00ffaa, 0 0 8px #4b0082aa inset;
+  box-shadow:
+    0 0 14px #bf00ffaa,
+    0 0 8px #4b0082aa inset;
   transform: translateY(-2px);
 }
 
@@ -1577,7 +1599,9 @@ html {
 
 .social-icons a:hover {
   transform: translateY(-4px) scale(1.15);
-  text-shadow: 0 0 18px #bf00ff, 0 0 30px #bf00ff;
+  text-shadow:
+    0 0 18px #bf00ff,
+    0 0 30px #bf00ff;
 }
 
 /* ==== COPYRIGHT ==== */

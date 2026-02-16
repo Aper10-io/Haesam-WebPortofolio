@@ -65,9 +65,9 @@ const timelineItems = document.querySelectorAll(".timeline-item");
 const observer = new IntersectionObserver(
   (entries) =>
     entries.forEach(
-      (entry) => entry.isIntersecting && entry.target.classList.add("show")
+      (entry) => entry.isIntersecting && entry.target.classList.add("show"),
     ),
-  { threshold: 0.2 }
+  { threshold: 0.2 },
 );
 timelineItems.forEach((item) => observer.observe(item));
 
@@ -87,12 +87,11 @@ navToggle.addEventListener("click", () => {
 });
 
 // Auto close saat klik menu
-document.querySelectorAll(".nav-links a").forEach(link => {
+document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("active");
   });
 });
-
 
 /* ============================
       HERO REVEAL
@@ -140,9 +139,8 @@ document.addEventListener("mousemove", (e) => {
   const x = (e.clientX / innerWidth - 0.5) * 20;
   const y = (e.clientY / innerHeight - 0.5) * 20;
 
-  document.querySelector(
-    ".layer-1"
-  ).style.transform = `translate(${x}px, ${y}px)`;
+  document.querySelector(".layer-1").style.transform =
+    `translate(${x}px, ${y}px)`;
   document.querySelector(".layer-2").style.transform = `translate(${
     x * 1.5
   }px, ${y * 1.5}px)`;
@@ -161,4 +159,12 @@ document.querySelectorAll(".footer-right a").forEach((link) => {
   link.addEventListener("mouseleave", () => {
     link.style.textShadow = "0 0 5px #BF00FF";
   });
+});
+
+const track = document.querySelector(".slide-track");
+const slides = Array.from(track.children);
+
+slides.forEach((slide) => {
+  const clone = slide.cloneNode(true);
+  track.appendChild(clone);
 });
